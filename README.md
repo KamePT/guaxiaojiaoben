@@ -18,3 +18,6 @@
 
 # metatube部署参考
 https://metatube-community.github.io/README_ZH/
+
+# 刮削完效果大概这样
+![1](tu/1.png)
