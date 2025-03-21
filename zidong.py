@@ -56,7 +56,7 @@ def sanitize_filename(filename):
     sanitized = sanitized.replace('/', '_')  # Linux 特殊处理
     sanitized = sanitized.rstrip(' .')  # 刪除結尾的點和空格（Windows 处理）
     sanitized = sanitized.lstrip('.')  # 避免 Linux 隐藏文件问题
-    sanitized = sanitized.encode('utf-8')[:255]  # 按 UTF-8 字节截断
+    sanitized = sanitized.encode('utf-8')[:220]  # 按 UTF-8 字节截断
     sanitized = sanitized.decode('utf-8', 'ignore')  # 忽略无效字节 限制文件名长度
     return sanitized
 
